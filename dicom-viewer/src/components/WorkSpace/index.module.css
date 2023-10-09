@@ -1,0 +1,31 @@
+.dwvContainer {
+    margin-top: 10px;
+    opacity: 0;
+    animation: ani 0.25s forwards;
+}
+
+.layerGroup {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: inherit;
+}
+
+.layerGroup > * {
+    position: absolute;
+    pointer-events: none;
+}
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

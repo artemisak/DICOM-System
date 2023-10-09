@@ -1,0 +1,21 @@
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textBold {
+    font-weight: bold;
+}
+
+.loaderValueContainer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.whiteColor {
+    color: white!important;
+}

@@ -1,0 +1,28 @@
+.dropZone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 60px;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: inherit;
+    border-style: dashed;
+    background-color: #ffffff;
+    color: #999999;
+    outline: none;
+    transition: border .24s ease-in-out;
+    height: 300px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropZone:hover {
+    border-style: solid;
+}
+
+.dropZone:hover .titleText {
+    filter: contrast(0.8);
+}
+
+

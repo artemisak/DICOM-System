@@ -1,0 +1,27 @@
+body {
+    background: #eff2f7;
+}
+#root{
+    height: 100%;
+}
+.appLoader {
+    width: 40px;
+    height: 40px;
+    margin: 32px auto;
+}
+.appLoader:after {
+    content: " ";
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+    border-radius: 50%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #fff transparent #fff transparent;
+    animation: appLoader 1s linear infinite;
+}
+@keyframes appLoader {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}

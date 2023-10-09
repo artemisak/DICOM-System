@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Report Modal</title>
+  </head>
+  <body onload="fillCanvas()">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div style="max-width: 800px; margin: 8px auto; position: relative; width: 0; height: 0" id="content">
+      <img src="./img/1.png" style="display: none" id="img1"></img>
+      <img src="./img/2.png" style="display: none" id="img2"></img>
+
+      <canvas id="canvas1" style="position: absolute; width: 100%;"></canvas>
+      <canvas id="canvas2" style="position: absolute; width: 100%;"></canvas>
+    </div>
+    <div id="root" style="max-width: 800px; margin: 8px auto;"></div>
+  </body>
+  <script>
+    function fillCanvas() {
+      let canvas1 = document.getElementById('canvas1');
+      let canvas2 = document.getElementById('canvas2');
+      let img1 = document.getElementById('img1');
+      let img2 = document.getElementById('img2');
+      canvas1.width = img1.width;
+      canvas1.height = img1.height;
+
+      canvas2.width = img2.width;
+      canvas2.height = img2.height;
+
+      canvas1.getContext('2d').drawImage(img1, 0, 0);
+      canvas2.getContext('2d').drawImage(img2, 0, 0);
+    }
+  </script>
+</html>

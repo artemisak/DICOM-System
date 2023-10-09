@@ -1,0 +1,17 @@
+.fullScreenContainer {
+    padding: 16px;
+    background: #303030;
+}
+
+.fullScreenButtonContainer {
+    position: relative;
+}
+
+.fullScreenButton {
+    right: 8px;
+    top: 72px;
+    position: absolute;
+    z-index: 20;
+    width: 40px;
+    height: 40px;
+}

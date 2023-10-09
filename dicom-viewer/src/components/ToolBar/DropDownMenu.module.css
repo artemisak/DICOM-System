@@ -1,0 +1,16 @@
+.itemsContainer {
+    margin: -8px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu .menuContent {
+    position: absolute;
+    z-index: 99;
+    margin-top: 8px;
+}
