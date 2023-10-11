@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const filePath = (filename) => {
-    return `${path.join(__dirname, '../storage')}/${filename}.b64`;
+    return `${path.join(process.env.PWD, '../storage')}/${filename}.b64`;
 }
 
 const fileStorage = {
