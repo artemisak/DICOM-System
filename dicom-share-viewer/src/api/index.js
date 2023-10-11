@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const server = axios.create({
-    baseURL: 'http://77.234.215.138:${location.port}/',
+    baseURL: `http://77.234.215.138:${location.port}/`,
     timeout: 10000,
     withCredentials: true,
 });
