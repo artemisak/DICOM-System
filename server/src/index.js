@@ -37,7 +37,7 @@ const startServer = () => {
     }
 
     const mongooseOptions = {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true};
-    mongoose.connect('mongodb://localhost/dsv', mongooseOptions, (err => {
+    mongoose.connect('mongodb://77.234.215.138:3000/dsv', mongooseOptions, (err => {
         if (err) console.error('MongoDB connection error!');
         else console.log('MongoDB successfully connected!');
     }));
