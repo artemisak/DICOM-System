@@ -13,7 +13,7 @@ process.env.PWD = __dirname;
 const app = express();
 app.use(express.static('/home/art-isakov/DICOM-System/dicom-share-viewer/build'))
     .use(express.json({limit: '24mb'}))
-    .use(cors({origin: 'http://77.234.215.138:4000', credentials: true, optionSuccessStatus: 200}))
+    .use(cors({origin: 'http://77.234.215.138:60474', credentials: true, optionSuccessStatus: 200}))
 
 app.use('*', (req, res, next) => {next()})
 app.use('/auth', authRouter);
