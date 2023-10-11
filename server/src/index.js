@@ -13,7 +13,7 @@ process.env.PWD = __dirname;
 const app = express();
 app.use(express.static('../dicom-share-viewer/build'))
     .use(express.json({limit: '24mb'}))
-    .use(cors({origin: 'http://localhost:4000', credentials: true, optionSuccessStatus: 200}))
+    .use(cors({origin: 'http://77.234.215.138:4000', credentials: true, optionSuccessStatus: 200}))
 
 app.use('*', (req, res, next) => {next()})
 app.use('/auth', authRouter);
@@ -37,7 +37,7 @@ const startServer = () => {
     }
 
     const mongooseOptions = {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true};
-    mongoose.connect('mongodb://localhost:27017/dsv', mongooseOptions, (err => {
+    mongoose.connect('mongodb://77.234.215.138:27017/dsv', mongooseOptions, (err => {
         if (err) console.error('MongoDB connection error!');
         else console.log('MongoDB successfully connected!');
     }));
